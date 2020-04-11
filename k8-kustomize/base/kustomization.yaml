@@ -1,0 +1,4 @@
+namePrefix: test-
+resources:
+  - deployment.yaml
+  - service.yaml
