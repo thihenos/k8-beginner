@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta1
+kind: Config
+metadata:
+  name: k--skaffold
+build:
+  artifacts:
+  - image: thihenos/docker-node
+    context: src
+deploy:
+  helm:
+    releases:
+    - name: skaffold-helm
+      chartPath: k8-helm
+      values:
+        image: thihenos/docker-node
+      valuesFiles:
+        - k8-helm/values.yaml

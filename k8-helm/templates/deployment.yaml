@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: node-beginner
+  name: "{{ .Release.Name }}-app-deploy"
+spec:
+  replicas: {{ .Values.deploy.replicas }}
+  selector:
+    matchLabels:
+      app: node-beginner
+  template:
+    metadata:
+      labels:
+        app: node-beginner
+    spec:
+      containers:
+      - image: "{{ .Values.deploy.image.repository }}:{{ .Chart.AppVersion }}"
+        name: app

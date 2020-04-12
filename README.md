@@ -13,7 +13,8 @@ Estrutura de pastas:
 # Anotação principal principais:
 Para melhor entendimento desse repositório, acesse a série de artigos que desenvolvi relacionado a isso.
 
-[K8-Primeiros Passos](https://medium.com/@thihenos/kubernetes-para-iniciantes-1-primeiros-passos-212ae76544ce) 
+[K8-Primeiros Passos](https://medium.com/@thihenos/kubernetes-para-iniciantes-1-primeiros-passos-212ae76544ce)
+[K8-Ferramentas](https://medium.com/@thihenos/kubernetes-para-iniciantes-1-primeiros-passos-212ae76544ce) 
 
 License
 ----

@@ -1,0 +1,4 @@
+deploy:
+  replicas: 5
+  image:
+    repository: thihenos/docker-node
