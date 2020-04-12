@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: node-beginner #Daremos a label app com o valor node-beginner para nosso deployment
+  name: app #O nome dos nossos podes começarão com app
+spec:
+  replicas: 2 #Quantidade de Pods que serão "deployados"
+  selector:
+    matchLabels:
+      app: node-beginner #Irá selecionar, todos os Pods que terão a label app
+  template: #Criando padrão de template para os Pods do Cluster
+    metadata:
+      labels:
+        app: node-beginner #Todos os Pods receberão a label node-beginner
+    spec: #Entrando nas especificações técnicas
+      containers:
+        -
+          image: thihenos/docker-node:0.2 #Estamos utilizando a imagem thineos/docker-node:02, lembrando que esse processo só pega imagens registradas no dockerhub
+          name: app #Nome dos nossos containers comeração como app

@@ -1,0 +1,12 @@
+apiVersion: skaffold/v2beta1
+kind: Config
+metadata:
+  name: k--skaffold
+build:
+  artifacts:
+  - image: thihenos/docker-node
+    context: src
+deploy:
+  kubectl:
+    manifests:
+    - k8s/manifest.yaml

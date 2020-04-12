@@ -1,0 +1,23 @@
+{
+  "name": "docker-beginner",
+  "version": "1.0.0",
+  "description": "Node example for automating tests using Selenium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thihenos/docker-beginner.git"
+  },
+  "author": "@thihenos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thihenos/docker-beginner/issues"
+  },
+  "homepage": "https://github.com/thihenos/docker-beginner#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
