@@ -11,3 +11,4 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
+      #nodePort : 32321 Porta de entrada dos nós do Kubernetes para acesso externo
