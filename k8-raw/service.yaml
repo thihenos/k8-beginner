@@ -7,8 +7,9 @@ metadata:
 spec:
   selector:
     app: node-beginner
+  type: NodePort
   ports:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-      #nodePort : 32321 Porta de entrada dos nós do Kubernetes para acesso externo
+      nodePort : 32328
